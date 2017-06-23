@@ -35,19 +35,12 @@
     "flow": "flow",
     "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/**/*.js'",
     "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
-    "precommit": "lint-staged"
   },
   "atomTestRunner": "atom-jasmine2-test-runner",
   "repository": "https://github.com/nteract/hydrogen",
   "license": "MIT",
   "engines": {
     "atom": ">=1.17.0 <2.0.0"
-  },
-  "lint-staged": {
-    "{lib,spec}/**/*.js": [
-      "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5",
-      "git add"
-    ]
   },
   "dependencies": {
     "@jupyterlab/services": "^0.42.0",
