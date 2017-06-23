@@ -45,7 +45,7 @@
   },
   "lint-staged": {
     "{lib,spec}/**/*.js": [
-      "prettier --write",
+      "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5",
       "git add"
     ]
   },
