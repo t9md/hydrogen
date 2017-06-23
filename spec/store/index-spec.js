@@ -171,7 +171,7 @@ describe("Store", () => {
     const kernel2 = jasmine.createSpyObj("kernel2", ["destroy"]);
     store.runningKernels.set("lang1", kernel1);
     store.runningKernels.set("lang2", kernel2);
-    store.dispose();
+    store.destroy();
     expect(store.runningKernels.size).toBe(0);
     expect(kernel1.destroy).toHaveBeenCalled();
     expect(kernel2.destroy).toHaveBeenCalled();
