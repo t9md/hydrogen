@@ -33,7 +33,7 @@
   },
   "scripts": {
     "flow": "flow",
-    "prettier": "prettier --write 'lib/**/*.js' 'spec/**/*.js'",
+    "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/**/*.js'",
     "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
     "precommit": "lint-staged"
   },
