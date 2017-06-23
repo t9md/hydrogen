@@ -34,7 +34,7 @@
   "scripts": {
     "flow": "flow",
     "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/**/*.js'",
-    "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
+    "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md"
   },
   "atomTestRunner": "atom-jasmine2-test-runner",
   "repository": "https://github.com/nteract/hydrogen",
