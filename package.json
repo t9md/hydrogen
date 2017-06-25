@@ -17,20 +17,6 @@
     "plot",
     "image"
   ],
-  "activationCommands": {
-    "atom-text-editor": [
-      "hydrogen:select-kernel",
-      "hydrogen:connect-to-remote-kernel",
-      "hydrogen:run",
-      "hydrogen:run-and-move-down",
-      "hydrogen:run-all",
-      "hydrogen:run-all-above",
-      "hydrogen:run-cell",
-      "hydrogen:run-cell-and-move-down",
-      "hydrogen:restart-kernel-and-re-evaluate-bubbles",
-      "hydrogen:toggle-bubble"
-    ]
-  },
   "scripts": {
     "flow": "flow",
     "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/**/*.js'",
