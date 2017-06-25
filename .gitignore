@@ -6,3 +6,5 @@ node_modules
 kernel-configs/
 _book/
 package-lock.json
+flow-typed/
+types/
