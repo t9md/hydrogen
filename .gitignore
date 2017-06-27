@@ -8,3 +8,4 @@ _book/
 package-lock.json
 flow-typed/
 types/
+misc/
