@@ -1,0 +1,1 @@
+- OutputArea should clear it's history on `restart-and-re-evaluate`

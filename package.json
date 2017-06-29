@@ -17,37 +17,16 @@
     "plot",
     "image"
   ],
-  "activationCommands": {
-    "atom-text-editor": [
-      "hydrogen:select-kernel",
-      "hydrogen:connect-to-remote-kernel",
-      "hydrogen:run",
-      "hydrogen:run-and-move-down",
-      "hydrogen:run-all",
-      "hydrogen:run-all-above",
-      "hydrogen:run-cell",
-      "hydrogen:run-cell-and-move-down",
-      "hydrogen:restart-kernel-and-re-evaluate-bubbles",
-      "hydrogen:toggle-bubble"
-    ]
-  },
   "scripts": {
     "flow": "flow",
-    "prettier": "prettier --write 'lib/**/*.js' 'spec/**/*.js'",
-    "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
-    "precommit": "lint-staged"
+    "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/**/*.js'",
+    "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md"
   },
   "atomTestRunner": "atom-jasmine2-test-runner",
   "repository": "https://github.com/nteract/hydrogen",
   "license": "MIT",
   "engines": {
     "atom": ">=1.17.0 <2.0.0"
-  },
-  "lint-staged": {
-    "{lib,spec}/**/*.js": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "dependencies": {
     "@jupyterlab/services": "^0.42.0",
@@ -86,11 +65,6 @@
       "versions": {
         "2.0.0": "provide"
       }
-    },
-    "hydrogen.provider": {
-      "versions": {
-        "1.0.0": "provideHydrogen"
-      }
     }
   },
   "devDependencies": {
@@ -101,7 +75,7 @@
     "lint-staged": "^4.0.0",
     "markdox": "^0.1.10",
     "mobx-react-devtools": "^4.2.11",
-    "prettier": "1.4.2",
+    "prettier": "^1.5.2",
     "react-test-renderer": "^15.5.4"
   }
 }
